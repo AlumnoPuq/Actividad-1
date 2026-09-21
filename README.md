@@ -5,14 +5,17 @@ Este repositorio contiene la arquitectura base para un framework de pruebas auto
 
 2. Explicacion de como ejecutar las pruebas y pipeline:
 
-Ejecución del Pipeline de CI/CD
+2.1 Ejecución del Pipeline de CI/CD
 El pipeline se encuentra automatizado en la nube mediante GitHub Actions y está configurado en el archivo .github/workflows/ci.yml.
 Disparadores: Se ejecuta de forma automática ante cada push o Pull Request hacia las ramas main o develop.
 
-Stages del Pipeline:
+2.2 Stages del Pipeline:
 Build & Unit Tests: Compila el código fuente en Java 17 y ejecuta la suite de pruebas unitarias.
+
 Acceptance Tests: Ejecuta las pruebas de aceptación y verificación funcional.
+
 Staging Deployment: Simula el empaquetado y despliegue del artefacto en el ambiente de prueba.
+
 Rollback Strategy: Mecanismo de resiliencia automatizado (if: failure()) que interrumpe despliegues defectuosos y ejecuta un rollback ante fallos operativos.
 
 3. Evidencias del funcionamiento:
