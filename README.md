@@ -1,8 +1,9 @@
 # Examen-Iplacex
-Descripcion del proyecto:
+1. Descripcion del proyecto:
 
 Este repositorio contiene la arquitectura base para un framework de pruebas automatizadas y entrega continua (CI/CD) desarrollado en Java. Su objetivo principal es estandarizar el ciclo de vida de desarrollo de software (SDLC) mediante la integración de controles de calidad estrictos, pruebas automatizadas y despliegues seguros y controlados en entornos de prueba
-Explicacion de como ejecutar las pruebas y pipeline:
+
+2. Explicacion de como ejecutar las pruebas y pipeline:
 
 Ejecución del Pipeline de CI/CD
 El pipeline se encuentra automatizado en la nube mediante GitHub Actions y está configurado en el archivo .github/workflows/ci.yml.
@@ -14,7 +15,7 @@ Acceptance Tests: Ejecuta las pruebas de aceptación y verificación funcional.
 Staging Deployment: Simula el empaquetado y despliegue del artefacto en el ambiente de prueba.
 Rollback Strategy: Mecanismo de resiliencia automatizado (if: failure()) que interrumpe despliegues defectuosos y ejecuta un rollback ante fallos operativos.
 
-Evidencias del funcionamiento:
+3. Evidencias del funcionamiento:
 
 Ejecución Exitosa del Pipeline de CI
 Pipeline validando la compilación, pruebas unitarias y análisis estático en la rama develop.
