@@ -58,7 +58,7 @@ jobs:
 
   rollback-strategy:
     needs: deploy-to-staging
-    if: failure()fghgh
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Execute Automated Rollback
